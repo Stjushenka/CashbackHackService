@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
+
 public class CashbackHackServiceTest {
     @Test
     public void shouldReturn100IfAmountIs900() {
@@ -15,11 +16,11 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void shouldReturn1000IfAmountIs1000() {
+    public void shouldReturn0IfAmountIs1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
         int actual = service.remain(amount);
-        int expected = 1000;
+        int expected = 0;
         Assert.assertEquals(actual, expected);
     }
 
