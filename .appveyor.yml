@@ -1,16 +1,16 @@
-    image: Ubuntu
+image: Ubuntu
 
-    stack: jdk 11
+stack: jdk 11
 
-    branches:
-      only:
-        - master
+branches:
+  only:
+    - master
 
-    build: off
+build: off
 
-    install:
-      - skip
+install:
+  - skip
 
-    build_script:
-      - chmod +x gradlew
-      - ./gradlew test --info
+build_script:
+  - chmod +x gradlew
+  - ./gradlew test --info
