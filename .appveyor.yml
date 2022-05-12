@@ -8,8 +8,6 @@ branches:
 
 build: off
 
-install:
-  - skip
 
 build_script:
   -  chmod +x gradlew
